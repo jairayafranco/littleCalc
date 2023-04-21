@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+input {
+    grid-column: 1 / span 4;
+    cursor: default;
+    text-align: right;
+}
+
+button {
+    color: black;
+    font-weight: 500;
+}
+
+button[role="operator"] {
+    background-color: #E6934E;
+}
+
+button[role="number"] {
+    background-color: #DFDEE4;
+}
+
+.calc-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.ce-button {
+    grid-column: 1 / span 2;
+}
+
+.zero-button {
+    grid-column: 1 / span 3;
+}
