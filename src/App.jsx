@@ -33,8 +33,7 @@ function App() {
     }
 
     if (buttonValue === "=") {
-      input.value = input.value.replace("x", "*") ?? input.value;
-      input.value = eval(input.value.slice(0, -1)) ?? '';
+      input.value = eval(input.value.replace("x", "*").replace("÷", "/").slice(0, -1)) ?? '';
     }
   }
 
